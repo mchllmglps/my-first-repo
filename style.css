@@ -10,27 +10,56 @@
     text-decoration: none;
 }
 
-
-.main{
-    padding-top: 150px;
-    background-color: #c8ae7e;
+body{
     height: 100vh;
+    overflow: hidden;
+}
+.main{
+    padding: 190px;
+    background-color: #c8ae7e;
+    height: 100%;
+    color: #433e35;
 }
 
 .main h1 span{
     font-size: 65px;
     font-family: 'Sacramento';
+    color: #262420;
+    position: relative;
+}
+
+.main h1 span::after{
+    content: '';
+    background-color: #262420;
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    right: 0;
+    height: 1px;
+    top: 70px;
+    border-top: 3px solid #433e35;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.about{
+    position: relative;
 }
 
 .about h2{
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
 .about ul {
     padding: 20px;
+    padding-top: 0;
     margin: auto;
+}
+
+.about ul li{
+    padding: 5px;
 }
 
 .main .socials{
