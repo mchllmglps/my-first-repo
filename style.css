@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
 *{
     text-align: center;
@@ -28,7 +29,7 @@ body{
     position: relative;
 }
 
-.main h1 span::after{
+.main h1 .name::after{
     content: '';
     background-color: #262420;
     position: absolute;
@@ -40,6 +41,11 @@ body{
     border-top: 3px solid #433e35;
     width: 100px;
     border-radius: 50px;
+}
+
+.main .school{
+    font-family: 'Aboreto';
+    font-size: 35px;
 }
 
 .about{
